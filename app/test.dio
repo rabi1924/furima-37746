@@ -1,0 +1,37 @@
+<mxfile host="65bd71144e">
+    <diagram id="HI1XGUB4WKSG1R8Jx9T4" name="ページ1">
+        <mxGraphModel dx="728" dy="680" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="users" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="90" width="240" height="168" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="email(string型,NOT NULL,ユニーク制約)&lt;br&gt;encrypted_password&amp;nbsp;(string型,NOT NULL)&lt;br&gt;nickname(string型,NOT NULL)&lt;br&gt;last_name(string型,NOT NULL)&lt;br&gt;first_name(string型,NOT NULL)&lt;br&gt;last_name_kana(string型,NOT NULL)&lt;br&gt;first_name_kana(string型,NOT NULL)&lt;br&gt;birth_day(date型,NOT NULL)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="2">
+                    <mxGeometry y="30" width="240" height="138" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="items" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="90" width="250" height="168" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="name(string型,NOT NULL)&lt;br&gt;description(string型,NOT NULL)&lt;br&gt;category(string型,NOT NULL)&lt;br&gt;status(string型,NOT NULL)&lt;br&gt;shipping_cost(string型,NOT NULL)&lt;br&gt;shipping_days(string型,NOT NULL)&lt;br&gt;prefecture(string型,NOT NULL)&lt;br&gt;price(string型,NOT NULL)&lt;br&gt;user_id(references型,NOT NULL,外部キー)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4">
+                    <mxGeometry y="30" width="250" height="138" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="buyers" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="320" width="250" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="item_id(references型,NOT NULL,外部キー)&lt;br&gt;user_id(references型,NOT NULL,外部キー)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="6">
+                    <mxGeometry y="30" width="250" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" style="shape=connector;rounded=1;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.496;entryY=0.989;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=ERone;endFill=0;strokeColor=default;" edge="1" parent="1" source="8" target="25">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="destinations" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="520" width="250" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="post_code(string型,NOT NULL)&lt;br&gt;prefecture(string型,NOT NULL)&lt;br&gt;city(string型,NOT NULL)&lt;br&gt;address(string型,NOT NULL)&lt;br&gt;building_number(string型,NOT NULL)&lt;br&gt;phone_number(string型,NOT NULL)&lt;br&gt;buyer_id(references型,NOT NULL,外部キー)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="8">
+                    <mxGeometry y="30" width="250" height="110" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
